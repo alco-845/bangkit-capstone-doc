@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        tools:context=".ui.ProfileFragment">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:indeterminateTint="#4942E4"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/backgroundProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/aksen4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameUserProfile" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/dummy_baju"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBarProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:indeterminateTint="@color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nameUserProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="80dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_horizontal"
+            android:letterSpacing="-0.01"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image"
+            tools:text="Kevin Malik Ilham" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/emailUserProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center_horizontal"
+            android:letterSpacing="-0.01"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameUserProfile"
+            tools:text="kevinmf@gmail.com" />
+
+        <Button
+            android:id="@+id/informationAccountBtn"
+            style="@style/ButtonProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/profileBtnTitle"
+            app:cornerRadius="9dp"
+            app:icon="@drawable/user_icon"
+            app:iconGravity="start"
+            app:iconPadding="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backgroundProfile" />
+
+        <Button
+            android:id="@+id/favoriteProfileBtn"
+            style="@style/ButtonProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/favoritesBtnTitle"
+            app:cornerRadius="9dp"
+            app:icon="@drawable/baseline_favorite_border_24"
+            app:iconGravity="start"
+            app:iconPadding="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/informationAccountBtn"
+            app:layout_constraintStart_toStartOf="@+id/informationAccountBtn"
+            app:layout_constraintTop_toBottomOf="@+id/informationAccountBtn" />
+
+        <Button
+            android:id="@+id/changePasswordAccountBtn"
+            style="@style/ButtonProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/changePasswordBtnTitle"
+            app:cornerRadius="9dp"
+            app:icon="@drawable/baseline_lock_open_24"
+            app:iconGravity="start"
+            app:iconPadding="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/favoriteProfileBtn"
+            app:layout_constraintStart_toStartOf="@+id/favoriteProfileBtn"
+            app:layout_constraintTop_toBottomOf="@+id/favoriteProfileBtn" />
+
+        <Button
+            android:id="@+id/helpCenterBtn"
+            style="@style/ButtonProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/helpCenterBtnTitle"
+            app:cornerRadius="9dp"
+            app:icon="@drawable/baseline_help_outline_24"
+            app:iconGravity="start"
+            app:iconPadding="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/changePasswordAccountBtn"
+            app:layout_constraintStart_toStartOf="@+id/changePasswordAccountBtn"
+            app:layout_constraintTop_toBottomOf="@+id/changePasswordAccountBtn" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logoutProfileBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/button_colorbackground"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="16dp"
+            android:text="@string/logoutAccountProfile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:cornerRadius="9dp"
+            app:iconGravity="start"
+            app:iconPadding="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/helpCenterBtn"
+            app:layout_constraintStart_toStartOf="@+id/helpCenterBtn"
+            app:layout_constraintTop_toBottomOf="@+id/helpCenterBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

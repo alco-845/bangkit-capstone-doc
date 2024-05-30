@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SplashScreenActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/logo_deletebg" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/splashTextOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/garamond_medium"
+        android:text="@string/boldSplashScreen"
+        android:textColor="#4C4C6D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/splashLogo"
+        app:layout_constraintStart_toStartOf="@+id/splashLogo"
+        app:layout_constraintTop_toBottomOf="@+id/splashLogo" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/lightSplashScreen"
+        android:textColor="#4C4C6D"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/splashTextOne"
+        app:layout_constraintStart_toStartOf="@+id/splashTextOne"
+        app:layout_constraintTop_toBottomOf="@+id/splashTextOne" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

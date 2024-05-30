@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailFashionActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/backButtonDetailProduct"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/backButtonDetailContentDescription"
+        android:elevation="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/baseline_arrow_back_register_ios_24"
+        app:layout_constraintStart_toStartOf="@+id/ivProductImage"
+        app:layout_constraintTop_toTopOf="@+id/ivProductImage" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnMoreDetailProduct"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/moreDetailContentDescription"
+        android:elevation="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/baseline_more_vert_24"
+        app:layout_constraintEnd_toEndOf="@id/ivProductImage"
+        app:layout_constraintTop_toTopOf="@+id/ivProductImage" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivProductImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dummy_baju"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cc_detail_fashion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/bg_detail_product"
+        android:elevation="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivProductImage"
+        app:layout_constraintStart_toStartOf="@+id/ivProductImage"
+        app:layout_constraintTop_toBottomOf="@id/ivProductImage">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/minimizeAndFullInformationOutfit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/baseline_remove_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDetailNameProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/minimizeAndFullInformationOutfit"
+            tools:text="Blue Polo Tshirt Short Sleeves" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDetailPriceProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#0085FF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvDetailNameProduct"
+            app:layout_constraintStart_toStartOf="@+id/tvDetailNameProduct"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailNameProduct"
+            tools:text="IDR 99.999" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDescriptionProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvDetailPriceProduct"
+            app:layout_constraintStart_toStartOf="@+id/tvDetailPriceProduct"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailPriceProduct"
+            tools:text="this is a blue polo shirt made of silk fabric imported from Japan." />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buyProductButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/button_colorbackground"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_vertical|center_horizontal"
+            android:letterSpacing="-0.01"
+            android:padding="16dp"
+            android:text="@string/buyProductCharBtn"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnFavoriteProduct"
+            app:layout_constraintEnd_toEndOf="@+id/tvDescriptionProduct"
+            app:layout_constraintStart_toEndOf="@+id/btnFavoriteProduct"
+            app:layout_constraintTop_toTopOf="@+id/btnFavoriteProduct" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFavoriteProduct"
+            style="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/favoriteIconContentDescription"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            app:cornerRadius="100dp"
+            app:icon="@drawable/baseline_favorite_border_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="24dp"
+            app:iconTint="@color/button_colorbackground"
+            app:layout_constraintStart_toStartOf="@+id/tvDescriptionProduct"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescriptionProduct" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

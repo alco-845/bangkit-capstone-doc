@@ -1,0 +1,13 @@
+package com.fashionism.fashionismuserapp.data.dummy
+
+import com.fashionism.fashionismuserapp.R
+
+object DummyAds {
+    val dummy = listOf(
+        DummyData2(1, R.drawable.dummy_ads, "Blue Longsleeves Polo Tshirt", "Rp. 100.000", "Toko Baju", "Baju pantai adalah pakaian yang nyaman dan ringan yang dirancang khusus untuk digunakan saat berlibur di pantai. Baju ini terbuat dari bahan yang cepat kering dan bernapas, sehingga memberikan kenyamanan selama aktivitas di sepanjang pantai. Desainnya yang santai dan trendy membuatnya cocok untuk berbagai kesempatan, mulai dari berjemur di bawah sinar matahari, bermain di pasir, hingga berjalan-jalan di sepanjang tepi air", 100),
+        DummyData2(2, R.drawable.dummy_ads, "Celana", "Rp. 100.000", "Toko Celana", "Baju pantai adalah pakaian yang nyaman dan ringan yang dirancang khusus untuk digunakan saat berlibur di pantai. Baju ini terbuat dari bahan yang cepat kering dan bernapas, sehingga memberikan kenyamanan selama aktivitas di sepanjang pantai. Desainnya yang santai dan trendy membuatnya cocok untuk berbagai kesempatan, mulai dari berjemur di bawah sinar matahari, bermain di pasir, hingga berjalan-jalan di sepanjang tepi air", 100),
+        DummyData2(3, R.drawable.dummy_ads, "Sepatu", "Rp. 100.000", "Toko Sepatu", "Baju pantai adalah pakaian yang nyaman dan ringan yang dirancang khusus untuk digunakan saat berlibur di pantai. Baju ini terbuat dari bahan yang cepat kering dan bernapas, sehingga memberikan kenyamanan selama aktivitas di sepanjang pantai. Desainnya yang santai dan trendy membuatnya cocok untuk berbagai kesempatan, mulai dari berjemur di bawah sinar matahari, bermain di pasir, hingga berjalan-jalan di sepanjang tepi air", 100),
+        DummyData2(4, R.drawable.dummy_ads, "Tas", "Rp. 100.000", "Toko Tas", "Baju pantai adalah pakaian yang nyaman dan ringan yang dirancang khusus untuk digunakan saat berlibur di pantai. Baju ini terbuat dari bahan yang cepat kering dan bernapas, sehingga memberikan kenyamanan selama aktivitas di sepanjang pantai. Desainnya yang santai dan trendy membuatnya cocok untuk berbagai kesempatan, mulai dari berjemur di bawah sinar matahari, bermain di pasir, hingga berjalan-jalan di sepanjang tepi air", 100),
+        DummyData2(5, R.drawable.dummy_ads, "Baju", "Rp. 100.000", "Toko Baju", "Baju pantai adalah pakaian yang nyaman dan ringan yang dirancang khusus untuk digunakan saat berlibur di pantai. Baju ini terbuat dari bahan yang cepat kering dan bernapas, sehingga memberikan kenyamanan selama aktivitas di sepanjang pantai. Desainnya yang santai dan trendy membuatnya cocok untuk berbagai kesempatan, mulai dari berjemur di bawah sinar matahari, bermain di pasir, hingga berjalan-jalan di sepanjang tepi air", 100),
+    )
+}

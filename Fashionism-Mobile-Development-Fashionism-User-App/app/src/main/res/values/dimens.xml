@@ -1,0 +1,4 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="grid_spacing">8dp</dimen> <!-- Sesuaikan ukuran jarak yang diinginkan -->
+</resources>

@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Fashionism - UMKM</string>
+
+    <!--    Bottom nav title-->
+    <string name="title_home">Home</string>
+    <string name="title_product">Product</string>
+    <string name="title_profile">Profile</string>
+    <!--    End of Bottom nav title-->
+
+    <!--    View-->
+    <string name="txt_splash">Style with Ease</string>
+    <string name="txt_splash_desc">Confidence with Fashionism</string>
+
+    <string name="txt_signin">Sign In</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_have_account">Don’t have an account?</string>
+    <string name="txt_sign_up">Sign Up</string>
+    <string name="txt_shop_name">Shop Name</string>
+    <string name="txt_confirm_password">Confirm Password</string>
+    <string name="txt_already_have_account">Already have account?</string>
+    <string name="txt_signout">Sign out</string>
+    <string name="txt_login_desc">Welcome back.\nYou’ve been missed !</string>
+    <string name="txt_regis_desc">Sign up now and \nGet your advantage!</string>
+
+    <string name="txt_date">Tuesday, June 06, 2023</string>
+    <string name="txt_welcome">Welcome Back!</string>
+    <string name="txt_summary">Summary</string>
+    <string name="txt_total_product">Total Product</string>
+    <string name="txt_zero">0</string>
+    <string name="txt_recent">Recent</string>
+    <string name="txt_sale">sale</string>
+    <string name="txt_recent_activity">Recent Activity</string>
+
+    <string name="txt_product_title">Product</string>
+    <string name="txt_description">Description</string>
+    <string name="txt_stock">Stock</string>
+    <string name="txt_stock_value">5</string>
+    <string name="txt_price">Price</string>
+    <string name="txt_price_value">Rp. 20.000</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_category">Category</string>
+    <string name="txt_type">Type</string>
+
+    <string name="txt_phone_number">Phone Number</string>
+    <string name="txt_upload_image">Upload image</string>
+    <string name="txt_outfit_name">Product name</string>
+    <string name="txt_submit">Submit</string>
+    <string name="txt_filter">Filter</string>
+    <string name="txt_none">-</string>
+    <string name="txt_year">2022</string>
+    <string name="txt_choose_picture">Choose a Picture</string>
+    <string name="txt_old_password">Old Password</string>
+    <string name="txt_new_password">New Password</string>
+    <string name="txt_confirm_new_password">Confirm new Password</string>
+    <string name="txt_help_center">Help Center</string>
+    <!--    End of View-->
+
+    <!--    Dialog-->
+    <string name="dialog_loading">Loading…</string>
+    <string name="dialog_upload_title">Upload image</string>
+    <string name="dialog_upload_message">Choose method to upload image</string>
+    <string name="dialog_camera">Camera</string>
+    <string name="dialog_gallery">Gallery</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_delete_product">Are you sure to delete this product?</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_show_all">Show all</string>
+    <string name="dialog_type">By type</string>
+    <string name="dialog_category">By category</string>
+    <!--    End Of Dialog-->
+
+    <!--    Toolbar-->
+    <string name="title_toolbar">Toolbar</string>
+    <string name="title_add_product">Add Product</string>
+    <string name="title_detail_outfit">Detail Product</string>
+    <string name="title_product_list">Product List</string>
+    <string name="title_chart">Transaction Statistic</string>
+    <string name="title_update_profile">Update Profile</string>
+    <string name="title_update">Update Product</string>
+    <string name="title_delete">Delete Product</string>
+    <string name="title_change_password">Change Password</string>
+    <string name="title_all_product">All Product</string>
+    <!--    End of Toolbar-->
+
+    <!--    Toast-->
+    <string name="toast_password_min_length">Password must be at least 6 characters long</string>
+    <string name="toast_password_match">Password must be the same</string>
+    <string name="toast_email_validate">Email is not valid</string>
+    <string name="toast_permission">Feature not working. Please allow the permission</string>
+    <string name="toast_failed_camera">Failed to start camera</string>
+    <string name="toast_failed_load_image">Failed to load image</string>
+    <string name="toast_insert_image">Please insert image</string>
+    <string name="toast_insert_columns">Columns must be filled</string>
+    <string name="toast_unreleased_feature">This feature has not been release</string>
+    <!--    End of Toast-->
+
+    <!--    Font certs-->
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=
+        </item>
+    </string-array>
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
+        </item>
+    </string-array>
+    <!--    End of Font certs-->
+</resources>

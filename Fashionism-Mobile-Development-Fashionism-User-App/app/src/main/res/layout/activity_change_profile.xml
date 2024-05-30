@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        tools:context=".ui.ChangeProfileActivity">
+
+        <ImageView
+            android:id="@+id/btnBackRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/backButtonRegisterDescription"
+            android:elevation="3dp"
+            android:src="@drawable/baseline_arrow_back_register_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/titleSeeProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/profileBtnTitle"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_image"
+            app:layout_constraintStart_toStartOf="@+id/profile_image"
+            app:layout_constraintTop_toTopOf="@+id/btnBackRegister" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/editImageIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginBottom="32dp"
+            android:visibility="gone"
+            android:src="@drawable/baseline_edit_24"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+            app:layout_constraintEnd_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:elevation="-1dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_local_account"
+            app:shapeAppearanceOverlay="@style/CircleImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBackRegister" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nameSeeProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/nameTitleChangeProfile"
+            app:layout_constraintStart_toStartOf="@+id/btnBackRegister"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nameSeeEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/nameTitleChangeProfile"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/btnBackRegister"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <ProgressBar
+            android:id="@+id/progressBarChangeProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:indeterminateTint="#4942E4"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nameSeeProfileValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="52dp"
+            android:background="@drawable/bg_textview"
+            android:fontFamily="@font/poppins"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/nameSeeProfile"
+            app:layout_constraintTop_toBottomOf="@+id/nameSeeProfile" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputNameProfile"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="53dp"
+            android:visibility="gone"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/nameSeeEditProfile"
+            app:layout_constraintTop_toBottomOf="@+id/nameSeeEditProfile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputNameProfileField"
+                style="@style/CustomEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="password"
+                android:background="@drawable/edittext_bg_rounded_profile"
+                android:ems="10"
+                android:hint="@string/nameHint"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="20dp"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/emailSeeProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/emailTitleChangeProfile"
+            app:layout_constraintStart_toStartOf="@+id/nameSeeProfile"
+            app:layout_constraintTop_toBottomOf="@+id/nameSeeProfileValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/emailSeeEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/emailTitleChangeProfile"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/nameSeeEditProfile"
+            app:layout_constraintTop_toBottomOf="@+id/inputNameProfile" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/emailSeeProfileValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="53dp"
+            android:background="@drawable/bg_textview"
+            android:fontFamily="@font/poppins"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/emailSeeProfile"
+            app:layout_constraintTop_toBottomOf="@+id/emailSeeProfile" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputEmailProfile"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/inputNameProfile"
+            app:layout_constraintStart_toStartOf="@+id/emailSeeEditProfile"
+            app:layout_constraintTop_toBottomOf="@+id/emailSeeEditProfile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputEmailProfileField"
+                style="@style/CustomEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="password"
+                android:background="@drawable/edittext_bg_rounded_profile"
+                android:ems="10"
+                android:hint="@string/emailHint"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="20dp"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/addressSeeProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/addressTitleChangeProfile"
+            app:layout_constraintStart_toStartOf="@+id/emailSeeProfile"
+            app:layout_constraintTop_toBottomOf="@+id/emailSeeProfileValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/addressSeeEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/addressTitleChangeProfile"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/emailSeeEditProfile"
+            app:layout_constraintTop_toBottomOf="@+id/inputEmailProfile" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputAddressProfile"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:visibility="gone"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/inputEmailProfile"
+            app:layout_constraintStart_toStartOf="@+id/addressSeeEditProfile"
+            app:layout_constraintTop_toBottomOf="@+id/addressSeeEditProfile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputAddressProfileField"
+                style="@style/CustomEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="password"
+                android:background="@drawable/edittext_bg_rounded_profile"
+                android:ems="10"
+                android:hint="@string/emailHint"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="20dp"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/addressSeeProfileValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="53dp"
+            android:background="@drawable/bg_textview"
+            android:fontFamily="@font/poppins"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/addressSeeProfile"
+            app:layout_constraintTop_toBottomOf="@+id/addressSeeProfile" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/phoneSeeProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/phoneTitleChangeProfile"
+            app:layout_constraintStart_toStartOf="@+id/addressSeeProfile"
+            app:layout_constraintTop_toBottomOf="@+id/addressSeeProfileValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/phoneSeeEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/phoneTitleChangeProfile"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/addressSeeProfile"
+            app:layout_constraintTop_toBottomOf="@+id/inputAddressProfile" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/phoneSeeProfileValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="53dp"
+            android:background="@drawable/bg_textview"
+            android:fontFamily="@font/poppins"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/phoneSeeProfile"
+            app:layout_constraintTop_toBottomOf="@+id/phoneSeeProfile" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputPhoneProfile"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="53dp"
+            android:elevation="3dp"
+            android:visibility="gone"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/phoneSeeEditProfile"
+            app:layout_constraintTop_toBottomOf="@+id/phoneSeeEditProfile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPhoneProfileField"
+                style="@style/CustomEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="password"
+                android:background="@drawable/edittext_bg_rounded_profile"
+                android:ems="10"
+                android:hint="@string/emailHint"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="20dp"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editProfileBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="53dp"
+            android:backgroundTint="@color/button_colorbackground"
+            android:contentDescription="@string/loginButtonDescription"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="16dp"
+            android:text="@string/editProfileBtnChangeProfile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:cornerRadius="9dp"
+            app:iconGravity="start"
+            app:iconPadding="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneSeeProfileValue" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveProfileBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="53dp"
+            android:backgroundTint="@color/button_colorbackground"
+            android:contentDescription="@string/loginButtonDescription"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="16dp"
+            android:text="@string/saveBtn"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone"
+            app:cornerRadius="9dp"
+            app:iconGravity="start"
+            app:iconPadding="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputPhoneProfile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

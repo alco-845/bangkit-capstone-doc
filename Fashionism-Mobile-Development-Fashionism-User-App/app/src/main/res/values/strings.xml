@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Fashionism</string>
+
+    <string name="boldSplashScreen">Style with Ease</string>
+    <string name="lightSplashScreen">Confidence with Fashionism</string>
+    <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus tortor ligula. Suspendisse eget purus at turpis consectetur venenatis. Duis eget commodo eros. Mauris auctor sapien eget sem semper lacinia. Integer urna tellus, gravida eget fringilla vel, dictum ac odio. Praesent finibus orci a ultrices imperdiet. Donec dictum vel mauris eget aliquam. Sed magna dui, pharetra quis erat vitae, consectetur dictum turpis. Aenean accumsan tincidunt justo, a bibendum lorem bibendum vel. Phasellus non velit gravida, efficitur felis quis, tincidunt odio. Fusce enim augue, congue nec hendrerit id, mollis nec dui. Phasellus finibus pharetra hendrerit. Phasellus blandit nibh eget tristique euismod. Nunc finibus sollicitudin mauris, at finibus risus ullamcorper eget. Curabitur ac nunc ac ante ultricies laoreet vitae in arcu. Integer luctus justo sit amet leo mollis, at efficitur justo accumsan. Fusce et nibh id erat gravida egestas ut at velit. Cras porta urna eros, eu ultrices leo pellentesque semper. Aliquam erat leo, efficitur accumsan tristique non, faucibus non elit. Nunc commodo consectetur sem sed porttitor. Aenean ante nulla, iaculis vel erat a, consequat rhoncus diam. Proin tempus imperdiet metus, sit amet tristique lectus pretium non. Cras gravida arcu et ipsum elementum, non sagittis enim luctus. In fermentum dictum pharetra. Integer eget placerat mauris. Phasellus eu pellentesque nulla, vel rutrum odio. Suspendisse nulla nibh, vestibulum eget semper quis, maximus eu justo. Integer maximus, sem sit amet maximus molestie, nulla ipsum sagittis tellus, ac pretium massa est feugiat tortor. Pellentesque blandit odio tellus, ac cursus neque condimentum id. Integer vitae porttitor nisl, in tincidunt nulla. Donec vulputate feugiat velit, non interdum lectus feugiat et. In interdum molestie nisl id blandit. Aenean vel condimentum leo, non sollicitudin nisi. Morbi massa libero, ornare in magna eget, suscipit blandit leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</string>
+
+    <!--  For Hint  -->
+    <string name="emailHint">Email ID</string>
+    <string name="passwordHint">Password</string>
+    <string name="confirmPasswordHint">Retype Password</string>
+    <string name="nameHint">Full Name</string>
+    <string name="phoneHint">Phone</string>
+
+
+    <!--  Register  -->
+
+
+    <!--  Login  -->
+    <string name="signInTitle">Sign In</string>
+    <string name="signInDescription">Welcome back. You’ve been missed !</string>
+    <string name="loginButtonDescription">This is a login</string>
+    <string name="backgrounLoginDescription">Just an background</string>
+    <string name="signupText">Don\'t have an account?</string>
+    <string name="emailRequired">Email is required</string>
+    <string name="emailInvalid">Email tidak valid</string>
+    <string name="passwordRequired">Password is required</string>
+    <string name="passwordInvalid">Password minimal 6 karakter</string>
+
+    <!--  Register  -->
+    <string name="registerTitle">Sign Up</string>
+    <string name="backButtonRegisterDescription">For back to Welcome Activity</string>
+    <string name="loginText">Have an account?</string>
+    <string name="nameRequired">Nama harus diisi</string>
+    <string name="phoneRequired">Nomor telepon harus diisi</string>
+    <string name="phoneInvalid">Nomor telepon tidak valid</string>
+    <string name="confirmPasswordRequired">Confirm password is required</string>
+    <string name="confirmPasswordInvalid">Confirm Password must be same with New Password</string>
+    <string name="emailAlreadyExist">Email sudah terdaftar</string>
+    <string name="registerSuccess">You have successfully registered, please login!</string>
+
+    <!--  Home  -->
+    <string name="title_home_bottomNav">Home</string>
+    <string name="title_search_bottomNav">Search</string>
+    <string name="title_settings_bottomNav">Settings</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="bottomNavDesc">For navigate from one to another fragment</string>
+    <string name="searchPlaceholder">search by image</string>
+    <string name="welcomeHome">Welcome back,</string>
+    <string name="productYouLikeHome">Most product you like</string>
+    <string name="userNameHome">Kevin Malik Fajar</string>
+    <string name="suggestFashionHome">Suggested for you</string>
+
+    <!--  Profile  -->
+    <string name="logoutAccountProfile">Logout</string>
+    <string name="logoutSuccess">Logout Successfully</string>
+    <string name="profileBtnTitle">Profile</string>
+    <string name="favoritesBtnTitle">My Favorites</string>
+    <string name="changePasswordBtnTitle">Change Password</string>
+    <string name="helpCenterBtnTitle">Help Center</string>
+
+    <!--  Change Profile  -->
+    <string name="nameTitleChangeProfile">Name</string>
+    <string name="emailTitleChangeProfile">Email</string>
+    <string name="addressTitleChangeProfile">Address</string>
+    <string name="phoneTitleChangeProfile">Phone</string>
+    <string name="editProfileBtnChangeProfile">Edit Profile</string>
+    <string name="chooseOneOption">Choose one of them</string>
+    <string name="saveBtn">Save</string>
+    <string name="cancelBtn">Cancel</string>
+    <string name="cameraOption">Camera</string>
+    <string name="fileManagerOption">File Manager</string>
+
+    <!--  Change Password  -->
+    <string name="currentPasswordTitleChangePassword">Password Successfully Changed</string>
+    <string name="oldPasswordRequired">Old Password is required</string>
+    <string name="newPasswordTitleChangePassword">New Password</string>
+
+
+    <!--  Welcome Screen  -->
+    <string name="welcomeTitleText">Discover your Perfect style here !</string>
+    <string name="welcomeDescText">Explore all style of outfit recommendations easily based on your preferences and get the products you want in one touch</string>
+
+    <!--  Save Pop Up  -->
+    <string name="changeConfirm">Change Confirmation</string>
+    <string name="changeConfirmDesc">Are you sure you want to change the data?</string>
+    <string name="changeConfirmYes">Yes</string>
+    <string name="changeConfirmNo">Cancel</string>
+
+    <!--  Loading Pop Up Search Data  -->
+    <string name="titleAwaitData">Identification</string>
+    <string name="descAwaitData">Understanding and Analysis</string>
+
+    <!--  Fashion Cardview  -->
+    <string name="favoriteIconContentDescription">For favorite item in case you like</string>
+
+    <!--  Favorite Item  -->
+    <string name="favoritePageTitle">Favorite</string>
+    <string name="currentPasswordHint">Current Password</string>
+    <string name="newPasswordHint">New Password</string>
+    <string name="buyProductCharBtn">Purchase Now</string>
+    <string name="emptyFavoriteProduct">Oh, there is no product :(</string>
+
+    <!--  Detail Product  -->
+    <string name="backButtonDetailContentDescription">For back to previous activity</string>
+    <string name="moreDetailContentDescription">More Button in detail product</string>
+
+    <string name="package_name">com.fashionism.fashionismuserapp</string>
+    <string name="choose_picture">Choose Picture</string>
+</resources>

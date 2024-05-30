@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="50dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDetailBottomNameProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Blue Polo Tshirt Short Sleeves"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDetailBottomPriceProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="IDR 99.999"
+        android:textColor="#0085FF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDetailBottomNameProduct"
+        app:layout_constraintStart_toStartOf="@+id/tvDetailBottomNameProduct"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailBottomNameProduct" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDescriptionBottomProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="this is a blue polo shirt made of silk fabric imported from Japan."
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDetailBottomPriceProduct"
+        app:layout_constraintStart_toStartOf="@+id/tvDetailBottomPriceProduct"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailBottomPriceProduct" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvReadMoreBottomDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="more details"
+        android:textColor="#0085FF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDetailBottomPriceProduct"
+        app:layout_constraintStart_toStartOf="@+id/tvDetailBottomPriceProduct"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionBottomProduct" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buyProductBottomButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/button_colorbackground"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_vertical|center_horizontal"
+        android:letterSpacing="-0.01"
+        android:padding="16dp"
+        android:text="@string/buyProductCharBtn"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFavoriteBottomProduct"
+        app:layout_constraintEnd_toEndOf="@+id/tvDescriptionBottomProduct"
+        app:layout_constraintStart_toEndOf="@+id/btnFavoriteBottomProduct"
+        app:layout_constraintTop_toTopOf="@+id/btnFavoriteBottomProduct" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFavoriteBottomProduct"
+        style="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/favoriteIconContentDescription"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/baseline_favorite_border_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="24dp"
+        app:iconTint="@color/button_colorbackground"
+        app:layout_constraintStart_toStartOf="@+id/tvDescriptionBottomProduct"
+        app:layout_constraintTop_toBottomOf="@+id/tvReadMoreBottomDesc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
